@@ -1,0 +1,14 @@
+# folders
+.idea
+__pycache__
+media
+myprojectenv
+
+# extentions
+*.pyc
+*.sqlite3
+
+# files
+local_settings.py
+checks.py
+mydatabase
