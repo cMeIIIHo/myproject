@@ -32,7 +32,7 @@ def gitpull(request):
     call_command('collectstatic', verbosity=0, interactive=False)
     # import uwsgi
     # uwsgi.reload()
-    return_code, output = sys_call('systemctl restart gunicorn')
+    return_code, output = sys_call('sudo systemctl restart gunicorn')
     if int(return_code) != 0:
         return HttpResponse('{}, {}'.format(return_code, output))
 
